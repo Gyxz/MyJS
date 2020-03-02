@@ -3,22 +3,24 @@ let Goods = new Array()
 
 class Good
 {
-    constructor(Name,SpaceStation)
+    constructor(Code,Name,Weight)
     {
+        this.Code = Code
         this.Name = Name
-        this.SpaceStation = SpaceStation
+        this.Weight = Weight
     }
 
-    AddGoods(name,SpaceStation)
+    AddGoods(code,name,weight)
     {
-        Goods.push(new Good(name,SpaceStation))
+        Goods.push(new Good(code,name,weight))
     }
 
 }
 
-function ChangeGoods (GoodsIndex,name,SpaceStation){
-	Good[GoodsIndex].name = name;
-	Good[GoodsIndex].SpaceStation = SpaceStation;
+function ChangeGoods (GoodsIndex,code,name,weight){
+    Good[GoodsIndex].Code = code;
+	Good[GoodsIndex].Name = name;
+	Good[GoodsIndex].Weight = weight;
 
 }
 function deleteoGoods (GoodsIndex){

@@ -3,22 +3,24 @@ let SpaceStations = new Array()
 
 class SpaceStation
 {
-    constructor(Name,Planet)
+    constructor(Name,Capacity,Needs)
     {
         this.Name = Name
-        this.Planet = Planet
+        this.Capacity = Capacity
+        this.Needs = Needs
     }
 
-    AddSpaceStations(name,planet)
+    AddSpaceStations(name,capacity,needs)
     {
-        SpaceStations.push(new SpaceStation(name,planet))
+        SpaceStations.push(new SpaceStation(name,capacity,needs))
     }
 
 }
 
-function ChangeSpaceStation (StationIndex,name,planet){
-	SpaceStation[StationIndex].name = name;
-	SpaceStation[StationIndex].planet = planet;
+function ChangeSpaceStation (StationIndex,name,capacity,needs){
+	SpaceStation[StationIndex].Name = name;
+    SpaceStation[StationIndex].Capacity = capacity;
+    SpaceStation[StationIndex].Needs = needs;
 
 }
 function deleteSpaceStation (StationIndex){
