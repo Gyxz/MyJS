@@ -29,7 +29,7 @@ function deleteSpaceStation (StationIndex){
 
 function foundSpaceStation (name){
 	let found = SpaceStation.find(function(element) {
-  	return element.name == name;
+  	    return element.name == name;
 	});
 	return found;
 }
