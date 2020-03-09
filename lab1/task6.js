@@ -42,8 +42,8 @@ Tree.prototype.traverseDF = function(callback) {
     })(this._root);
 
 };
-
-tree.traverseDF(function(node) {
-    console.log(node.data)
-});
-
+exports.DFS = function(){
+    tree.traverseDF(function(node) {
+        console.log(node.data)
+    });
+}

@@ -30,7 +30,7 @@ function deletePlanet (PlanetIndex){
 
 function foundPlanet (name){
 	let found = Planet.find(function(element) {
-  	return element.name == name;
+    	return element.name == name;
 	});
 	return found;
 }
